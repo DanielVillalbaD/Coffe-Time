@@ -8,7 +8,16 @@ let scssLoaders = [];
 if (isProduction) {
     scssLoaders = ExtractTextPlugin.extract({
         fallback: 'style-loader',
-        use: ['css-loader?url=false&sourceMap=true', 'sass-loader?sourceMap=true']
+        use: ['css-loader?url=false&sourceMap=true', 'sass-loader?sourceMap=true', {loader: 'postcss-loader', // Run post css actions
+        options: {
+          plugins: function () { // post css plugins, can be exported to postcss.config.js
+            return [
+              require('precss'),
+              require('autoprefixer')
+            ];
+          }
+        }
+      }]
     });
 } else {
     scssLoaders = ['style-loader', 'css-loader?url=false&sourceMap=true', 'sass-loader?sourceMap=true'];
@@ -58,6 +67,13 @@ module.exports = {
                 collapseWhitespace: true
             }
         }),
+        
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery',
+            Popper: ['popper.js', 'default'],            
+          }),
      /*   new HtmlWebpackPlugin({
             filename: 'contact.html',
             template: path.join(__dirname, 'src', 'contact.html'),
