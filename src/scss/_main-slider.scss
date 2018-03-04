@@ -1,0 +1,131 @@
+@import "./mixins/arrows";
+
+.slide-img { //Background images
+    max-width: 1574px;
+    width: 82% !important;
+    height: 460px;
+    margin: 0 auto;
+    background: url("http://res.cloudinary.com/miweb10/image/upload/v1500882782/PHYTO_gdyxij.jpg") repeat;
+}
+
+.nav-slider .icon-wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    &:before {
+        @include arrows-share;
+        @include prev-down;
+        @include icon-wrap-share;
+    }
+
+    &:after {
+        @include arrows-share;
+        @include prev-up;
+        @include icon-wrap-share;
+    }
+}  
+
+.nav-slider h4 {
+    position: absolute;
+	top: 50%;
+	margin: 0;
+	color: $font-color;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 0.85em;
+	opacity: 0;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.nav-slider a {
+    //Position
+	position: absolute;
+	top: 50%;
+	display: block;
+	z-index: 100;
+    transform: translateY(-50%);
+    
+    //Size
+    width: 100px;
+    height: 100px;
+
+    //Arrows
+
+    &.prev {
+        left: 0;
+        h4 {
+            left: 100%;
+            transform: translateY(-50%) translateX(-50%);
+        }
+    }
+
+    &.next {
+        right: 0;
+
+        &:before, .icon-wrap:before {
+            @include next-up;
+        }
+        &:after, .icon-wrap:after {
+            @include next-down;
+        }
+
+        &:hover:before, &:hover .icon-wrap:before {
+            transform: translateX(-50%) rotate(125deg);
+        }
+        &:hover:after, &:hover .icon-wrap:after {
+            transform: translateX(-50%) rotate(55deg);
+        }
+
+        h4 {
+            right: 100%;
+            text-align: right;
+            transform: translateY(-50%) translateX(50%);
+        }
+    }
+
+    &:before {
+        @include prev-down;
+        @include arrows-share;
+    }
+    &:after {
+        @include prev-up;
+        @include arrows-share;
+    }
+   /* &:hover {
+        .icon-wrap::before, .icon-wrap::after {
+            height: 50%;
+        }
+
+        &:before, .icon-wrap::after {
+            transform: translateX(-50%) rotate(-125deg);
+        }
+
+        &:after, .icon-wrap::after {
+            transform: translateX(-50%) rotate(-55deg);
+        }
+
+        h3 {
+            opacity: 1;
+            transform: translateY(-50%) translateX(0);
+        }
+
+    } */
+    &:hover .icon-wrap::before, &:hover .icon-wrap::after {
+        height: 50%;
+    }
+
+    &:hover::before, &:hover .icon-wrap::before {
+        transform: translateX(-50%) rotate(-125deg);
+    }
+    &:hover::after, &:hover .icon-wrap::after {
+        transform: translateX(-50%) rotate(-55deg);
+    }
+    &:hover h4 {
+        opacity: 1;
+        transform: translateY(-50%) translateX(0);
+    }
+}
+
+

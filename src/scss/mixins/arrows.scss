@@ -1,0 +1,39 @@
+@mixin arrows-share {
+    position: absolute;
+	left: 50%;
+	width: 3px;
+	height: 50%;
+	background: $arrows-color;
+	content: '';
+	transition: transform 0.3s;
+	backface-visibility: hidden;
+}
+
+@mixin next-up {
+	transform: translateX(-50%) rotate(135deg);
+	transform-origin: 50% 0%;
+}
+
+@mixin prev-down {
+    top: 50%;
+	transform: translateX(-50%) rotate(-135deg);
+	transform-origin: 50% 0%;
+}
+
+@mixin prev-up {
+    top: 50%;
+	transform: translateX(-50%) rotate(-45deg);
+	transform-origin: 0 0;
+}
+
+@mixin next-down {
+	transform: translateX(-50%) rotate(45deg);
+	transform-origin: 100% 0;
+}
+
+@mixin icon-wrap-share {
+    z-index: 90;
+	height: 0;
+	background: $font-color;
+    transition: height 0.3s, transform 0.3s;
+}
