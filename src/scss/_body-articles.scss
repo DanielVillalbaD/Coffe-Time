@@ -1,1 +1,88 @@
-@import "mixins/ellipsis";
+.articles-container {
+    max-width: 1296px !important;
+}
+
+.custom-card {
+    display: block;
+    flex-direction: column;
+    max-width: 100%;
+    background: #fdfdfd;
+    margin: 2rem .5rem;
+
+    .custom-card-tags {
+        margin: 1.3rem 0.9rem 0.8rem 1.6rem;
+        font-size: 0.8em;
+        a {
+            padding: 0 0.3rem;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            &:hover, &:focus {
+                color: $font-color2;
+            }
+        }        
+    }
+
+    .custom-card-title {
+        font-weight: 700;
+        font-size: 1.2em;
+        line-height: 1.1em;
+        margin: 0.4rem 1.2rem 0.7rem 1.8rem;
+
+        a {
+            color: $font-color;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            
+            &:hover, &:focus {
+                color: $accent-color;
+            } 
+        }
+    }
+
+    .custom-card-subtitle {
+        font-size: 0.9em;
+        padding: 0 1.2rem 0.8rem 1.8rem;
+        border-bottom: 2px solid $light-color;
+        margin: 0;
+    }
+
+    .custom-card-footer {
+        
+        margin: 0 1.4rem 0 1.8rem;
+        height: 2.8rem;
+        position: relative;
+        
+        p {
+            font-style: italic;
+            font-size: 0.8em;
+            display: inline-block;
+            line-height: 2.8rem; 
+        }
+
+        .card-icons {
+            display: inline-block;
+            position: absolute;
+            top: 0.25rem;
+            right: 0;
+
+            i { 
+                font-size: 1.6rem;
+                cursor: pointer;
+                transition: all 0.4s ease;                
+
+                sup {
+                    font-size: 0.4em;
+                    top: 0.1rem;
+                }
+
+                &:hover {
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+}
+
+.custom-thumb img {
+    width: 100%;
+}

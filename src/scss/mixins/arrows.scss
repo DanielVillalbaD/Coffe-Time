@@ -34,6 +34,6 @@
 @mixin icon-wrap-share {
     z-index: 90;
 	height: 0;
-	background: $font-color;
+	background: $accent-color;
     transition: height 0.3s, transform 0.3s;
 }

@@ -3,6 +3,15 @@
 <%= require('html-loader!./includes/header.html') %>
 <body>
 <%= require('html-loader!./includes/main-slider.html') %>
+
+<section class="container articles-container">
+    <div class="row masonry-grid">
+        <div class="col-md-6 col-lg-4 masonry-column px-4" id="card-column-1"></div>
+        <div class="col-md-6 col-lg-4 masonry-column px-4" id="card-column-2"></div>
+        <div class="col-md-6 col-lg-4 masonry-column px-4" id="card-column-3"></div>
+    </div>
+</section>
+
 <%= require('html-loader!./includes/footer.html') %>
 </body>
 </html>

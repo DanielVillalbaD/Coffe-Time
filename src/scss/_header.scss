@@ -1,61 +1,148 @@
-.logo {
-    font-family: 'Audiowide', sans-serif;
-    font-size: 3.6em;
-    color: #181818;
-  
+@import "./mixins/mobile-menu";
+
+.logo-row {
+  margin: 1.5rem 0 1.4rem 0;
+
+  .logo {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 3.6em;
+  color: #181818;
+  margin: 0 0 0 2rem;
+
     .icon {
       color: $accent-color;
       font-size: 2.8rem;
       margin-left: .4rem;
     }
   }
+}
 
 /* TOP BAR */
+header.container-fluid {
+  padding: 0;
+}
+
+
 .topbar {
-    background: $accent-color;
-    width: 18rem;
-    height: 2rem;
-    border: none;
-    border-bottom-right-radius: 35%;
-    border-bottom-left-radius: 35%;
-    box-shadow: 0px 2px 2px rgba(0,0,0,0.25);
-    
-    .topbar-item {
-      display: inline-block;
-      cursor: pointer;
-      color: $light-color;
-      &:nth-child(2n) {
-        border: {
-          style: solid;
-          width: 1px;
-          color: rgba(255, 255, 255, .1);
-          top: {
-            style: none;
-          }
-          bottom: {
-            style: none;
-          }
+  background: $accent-color;
+  width: 100%; //18rem;
+  height: 2rem;
+  border: none;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  margin: 0 auto;
+  
+  .topbar-item {
+    display: inline-block;
+    width: calc(100%/3);
+    cursor: pointer;
+    color: $light-color;
+    &:nth-child(2n) {
+      border: {
+        style: solid;
+        width: 1px;
+        color: rgba(255, 255, 255, .15);
+        top: none;
+        bottom: {
+          style: none;
         }
       }
     }
   }
+}
   
-  /* TOP BAR */
-  /* MENU */
-  
-  .main-nav {
-    list-style: none;
-    
-    .nav-item {
-      display: inline-block;
-      a {
-        color: $font-color;
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 1.2rem;
-        &:hover {
-        color: $accent-color;
-        }
-      }
-    }  
+/* TOP BAR */
+/* MENU */
+.row-nav {
+  display: none;
+  margin: 0;
+  background: $menu-background;
+  border-top: 2px dashed $accent-color;
+  border-bottom: 4px solid $accent-color;
+  box-shadow: 0px 3px 7px rgba(0,0,0,.5);
+
+  .col-nav {
+    margin: 0.9rem;
   }
+} 
+.main-nav {
+  list-style: none;
+  padding: 0.6rem 0;
+  
+  .nav-item {
+    display: inline-block;
+    min-width: 9rem;
+    text-align: left;
+    a {
+      color: $font-color;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: .9rem;
+      &:hover, &:focus {
+      color: $accent-color;
+      }
+      &:before {
+        content: "\f363";
+        font-family: "Ionicons";
+        color: $font-color;
+        padding-right: .35rem;
+      }
+    }
+  }  
+}
+
+/* MOBILE MENU */
+
+.mobile-menu {
+  display: inline-block;
+  position: relative;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 1.2rem 1rem 0 0;
+
+  span {
+    margin: 0 auto;
+    position: relative;
+    top: .8rem;
+    width: 1.8rem;
+    height: 4px;
+    background-color: $font-color;
+    display: block;
+  
+    &:before {
+      @include share-span;
+      @include off-state;
+      margin-top: -0.5rem;
+    } 
+
+    &:after {
+      @include share-span;
+      @include off-state;
+      margin-top: 0.5rem;
+    }
+
+  }
+
+  &:hover span, &:hover span:before, &:hover span:after {
+    background-color: $accent-color;
+    @include return-transition;
+  }
+
+}
+
+/* MOBILE MENU TOGGLE ANIMATION */
+.toggle:focus span {
+	background-color: rgba(0,0,0,0);
+	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+
+.toggle:focus span:before {
+	@include on-state;
+	-webkit-transform: rotate(45deg); transform: rotate(45deg);
+}
+
+.toggle:focus span:after {
+  @include on-state;
+	-webkit-transform: rotate(-45deg); transform: rotate(-45deg);
+}

@@ -1,0 +1,28 @@
+@mixin share-span {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1.8rem;
+    height: 4px;
+    background-color: $font-color;
+}
+
+@mixin return-transition {
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+@mixin off-state {
+    -webkit-transition-property: margin, -webkit-transform;
+    transition-property: margin, transform;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s, 0s;
+    transition-delay: 0.2s, 0s;
+}
+
+@mixin on-state {
+    margin-top: 0;
+    -webkit-transition-delay: 0s, 0.2s;
+    transition-delay: 0s, 0.2s;
+}
