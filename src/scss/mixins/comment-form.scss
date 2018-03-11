@@ -1,0 +1,13 @@
+@mixin share-inputs {
+    border: 1px solid $border-color;
+    padding: 0.6rem 1rem;
+    min-height: 3rem;
+    margin: 0.6%;
+    font-size: 0.9rem;
+    &::placeholder {
+        color: $input-text-color;
+    }
+    &:focus {
+        outline: none;
+    }
+}

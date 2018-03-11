@@ -1,4 +1,4 @@
-// Paths
+// Paths & Urls
 $images-path: '../assets/img/';
 
 // Font families
@@ -10,8 +10,17 @@ $font-color: #0e0e0e;
 $font-color2: #777777;
 $accent-color: #004f86;
 $light-color: #eee;
+$border-color: #ccc;
+$input-text-color: $border-color;
 
 // Element colors
 $arrows-color: #9c9c9c;
 $arrows-hover-color: $accent-color;
 $menu-background: #fff;
+$comments-background: #fff;
+
+//Transformations & Transitions
+$default-transition: all 0.4s ease;
+
+//Elements
+$dotsize: 0.5rem;

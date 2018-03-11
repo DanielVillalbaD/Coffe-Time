@@ -1,5 +1,9 @@
 @import "./mixins/arrows";
 
+.pc-slider {
+    display: none;
+}
+
 .slide-img { //Background images
     max-width: 1574px;
     width: 82% !important;

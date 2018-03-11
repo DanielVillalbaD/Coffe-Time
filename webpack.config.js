@@ -67,20 +67,19 @@ module.exports = {
                 collapseWhitespace: true
             }
         }),
-        
+        new HtmlWebpackPlugin({
+            filename: 'detalle.html',
+            template: path.join(__dirname, 'src', 'detalle.html'),
+            minify: {
+            collapseWhitespace: true
+            }
+        }),        
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery',
             Popper: ['popper.js', 'default'],            
           }),
-     /*   new HtmlWebpackPlugin({
-            filename: 'contact.html',
-            template: path.join(__dirname, 'src', 'contact.html'),
-            minify: {
-                collapseWhitespace: true
-            }
-        }),*/
         new ExtractTextPlugin('style.css')
     ],
 

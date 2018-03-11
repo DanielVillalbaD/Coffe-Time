@@ -1,0 +1,62 @@
+.loading-container {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 3rem;
+    justify-content: center;
+    margin: 2.8rem 1.5rem;
+    
+    &:before {
+      content: 'Cargando';
+      display: block;
+      font-size: 1.1rem;
+      position: absolute;
+      top: -2rem;
+      left: 0;
+      right: 0;
+      color: $font-color2;
+      text-align: center;
+      opacity: .8;
+    }
+  }
+  
+  .loading-dot {
+    position: relative;
+    width: $dotsize;
+    height: $dotsize;
+    background: $font-color2;
+    border-radius: 50%;
+    margin-right: $dotsize;
+    animation: dot 1.5s cubic-bezier(.17, .67, .83, .67) infinite;
+  }
+  
+  .loading-dot:nth-of-type(1) {
+    margin-right: 0;
+  }
+  
+  .loading-dot:nth-of-type(2) {
+    animation-delay: .175s;
+  }
+  
+  .loading-dot:nth-of-type(3) {
+    animation-delay: .35s;
+  }
+  
+  @keyframes dot {
+    0% {
+      transform: translate3d(-1000%, 0, 0);
+      opacity: 0;
+    }
+    20% {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+    80% {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+    100% {
+      transform: translate3d(1000%, 0, 0);
+      opacity: 0;
+    }
+  }

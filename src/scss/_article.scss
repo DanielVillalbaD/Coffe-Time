@@ -1,0 +1,56 @@
+.header-detail {
+    width: 96%;
+
+    .detail-tags {
+        color: $font-color2;
+        margin-bottom: 0.8rem;
+        @include media-breakpoint-up(sm) {
+            margin: 1.2rem 0 1.4rem 0;
+        }
+    }
+
+    .article-img {
+        max-width: 98%;
+        margin: 0.5rem 0 1.1rem 0;
+        @include media-breakpoint-up(sm) {
+            margin: 0.8rem 0 1.6rem 0;
+        }
+    }
+
+    @include media-breakpoint-up(sm) {
+        h2 {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.article-body {
+    padding: 0 1.4rem;
+    text-align: justify;
+    line-height: 2rem;
+
+    .detail-subtitle p {
+        font-weight: 900;
+        &:first-letter {
+            float: left;
+            display: inline-block;
+            margin: 0.2rem 0.5rem 0 0;
+            padding: 0.3rem;
+            font-size: 3.2rem;
+            line-height: 2rem;
+            color: $font-color;
+            border-bottom: 0.15rem solid $accent-color;    
+        }
+    }
+}
+
+.article-footer {
+    margin-bottom: 0.8rem;
+    i {
+        font-size: 3rem;
+        cursor: pointer;
+        &:hover{
+            color: $accent-color;
+        }
+    }
+}

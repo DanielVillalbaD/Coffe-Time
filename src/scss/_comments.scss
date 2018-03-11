@@ -1,0 +1,74 @@
+@import "./mixins/comment-form";
+
+.comment-title {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.comment-body {
+    background: $comments-background;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    margin-bottom: 1.8rem;    
+}
+
+.comment-author {
+    color: $font-color2;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+    margin: 1.2rem 0 0 0;
+    p {
+        margin-bottom: 0.25rem;
+    }
+}
+
+
+.comment-form-title {
+@extend .comment-title;
+
+border-top: 1px solid $border-color;
+margin-top: 3rem;
+padding: 2rem 0 0.7rem 1rem;
+}
+
+.comment-form {
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+
+    textarea {
+        width: 100%;
+        vertical-align: bottom;
+        @include share-inputs;
+    }
+
+    .short-field {
+        width: 100%;
+        @include share-inputs;
+        @include media-breakpoint-up(md) {
+            width: calc(50% - 1.5%);
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .comment-submit {
+        min-width: 14rem;
+        transition: $default-transition;
+        cursor: pointer;
+        @include share-inputs;
+        &:hover, &:focus, &:active {
+            background-color: $accent-color;
+            border-color: $accent-color;
+            color: $light-color;
+        }
+        &:disabled {
+            opacity: 0.4;
+            color: red;
+        }
+    }
+}
+
