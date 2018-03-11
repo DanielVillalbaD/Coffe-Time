@@ -28,36 +28,36 @@ const staticData = [
     },
     {
         "_id": "3",
-        "title": "Las mujeres revolucionarán la programación la próxima década",
-        "subtitle": "Según el último estudio de la <b>Universidad de Harvard publicado</b> en <i>Science Computering</i>, la revolución tecnológica será para las mujeres. El estudio arroja que en el 2025 habrá aumentado en aproximadamente 1000% el número de programadoras actuales frente al aumento de un 200% que se prevé en hombres",
-        "header-img": "/assets/img/woman.jpg",
-        "header-img-m": "/assets/img/woman-m.jpg",
-        "header-img-xs": "/assets/img/woman-xs.jpg",
-        "header-img-thumb": "/assets/img/woman-thumb.jpg",
+        "title": "Apple vuelve a desmarcarse con sus nuevas pantallas 4D",
+        "subtitle": "Cuando la nueva HyperAmoled parecía que tenía ganada la partida a la pantalla de retina, Apple lanza su nueva pantalla 4D llamada retina360. Se prevé que el lanzamiento del Iphone XV sea en 1 mes.",
+        "header-img": "/assets/img/castle.jpg",
+        "header-img-m": "/assets/img/castle-m.jpg",
+        "header-img-xs": "/assets/img/castle-xs.jpg",
+        "header-img-thumb": "/assets/img/castle-thumb.jpg",
         "content": "Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro. Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca.<quote>Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte de ellas.</quote>Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro. Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo",
-        "tags": "Actualidad",
+        "tags": ["Actualidad", "Tech"],
         "date": "2015-12-30 15:25:0"
     },
     {
         "_id": "4",
-        "title": "Las mujeres revolucionarán la programación la próxima década",
-        "subtitle": "Según el último estudio de la <b>Universidad de Harvard publicado</b> en <i>Science Computering</i>, la revolución tecnológica será para las mujeres. El estudio arroja que en el 2025 habrá aumentado en aproximadamente 1000% el número de programadoras actuales frente al aumento de un 200% que se prevé en hombres",
-        "header-img": "/assets/img/woman.jpg",
-        "header-img-m": "/assets/img/woman-m.jpg",
-        "header-img-xs": "/assets/img/woman-xs.jpg",
-        "header-img-thumb": "/assets/img/woman-thumb.jpg",
+        "title": "Una nueva moda se apodera de los más jóvenes",
+        "subtitle": "No necesitan nada más, ni mesa para comer, ni sillas, ni camas, sólo un portátil y un sofá, y ganan más que tú y que yo",
+        "header-img": "/assets/img/lifestyle.jpg",
+        "header-img-m": "/assets/img/lifestyle-m.jpg",
+        "header-img-xs": "/assets/img/lifestyle-xs.jpg",
+        "header-img-thumb": "/assets/img/lifestyle-thumb.jpg",
         "content": "Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro. Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca.<quote>Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte de ellas.</quote>Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro. Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo",
         "tags": "Actualidad",
         "date": "2018-2-30 15:25:0"
     },
     {
         "_id": "5",
-        "title": "Las mujeres revolucionarán la programación la próxima década",
-        "subtitle": "Según el último estudio de la <b>Universidad de Harvard publicado</b> en <i>Science Computering</i>, la revolución tecnológica será para las mujeres. El estudio arroja que en el 2025 habrá aumentado en aproximadamente 1000% el número de programadoras actuales frente al aumento de un 200% que se prevé en hombres",
-        "header-img": "/assets/img/woman.jpg",
-        "header-img-m": "/assets/img/woman-m.jpg",
-        "header-img-xs": "/assets/img/woman-xs.jpg",
-        "header-img-thumb": "/assets/img/woman-thumb.jpg",
+        "title": "Hemos probado el nuevo McLaren MCL33 de Fernando Alonso",
+        "subtitle": "No hay foto porque como nos va a dejar el coche... bueno de soñar también se vive dice un refrán que se dice por estos lares.",
+        "header-img": "/assets/img/placeholder.jpg",
+        "header-img-m": "/assets/img/placeholder-m.jpg",
+        "header-img-xs": "/assets/img/placeholder-xs.jpg",
+        "header-img-thumb": "/assets/img/placeholder-thumb.jpg",
         "content": "Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro. Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca.<quote>Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte de ellas.</quote>Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro. Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo",
         "tags": "Actualidad",
         "date": "2018-3-10 0:48:59"
@@ -158,7 +158,7 @@ export class GetStaticData {
             }
             
             //Insert HTML
-            htmlRes = '<article class="custom-card"><div class="custom-thumb"><a href="#" class="custom-read-more"><img srcset="' + imgXS + ' 200w,' + thumb + ' 600w" alt="Imagen destacada"></a></div><nav class="custom-card-tags">' + tagsHtml + '</nav><h3 class="custom-card-title"><a href="#" class="custom-read-more">' + title + '</a></h3><p class="custom-card-subtitle">' + subtitle + '</p><div class="custom-card-footer align-middle"><p>Publicado ' + dateOUT + '</p><div class="card-icons"><i class="icon ion-ios-chatbubble-outline mx-2"><sup>' + '1' + '</sup></i><i class="icon ion-ios-heart-outline"></i></div></div></article>';
+            htmlRes = '<article class="custom-card"><div class="custom-thumb"><a href="#" class="custom-read-more"><img srcset="' + imgXS + ' 200w,' + thumb + ' 600w" alt="Imagen destacada"></a></div><nav class="custom-card-tags">' + tagsHtml + '</nav><h3 class="custom-card-title"><a href="#" class="custom-read-more">' + title + '</a></h3><p class="custom-card-subtitle">' + subtitle + '</p><div class="custom-card-footer align-middle"><p>Publicado ' + dateOUT + '</p><div class="card-icons"><a href="/detalle.html#comments"><i class="icon ion-ios-chatbubble-outline mx-2"><sup class="comments-number"></sup></i></a><i class="icon ion-ios-heart-outline"></i></div></div></article>';
 
             // Allocate cards in Homepage
             if (window.location.pathname == '/') {

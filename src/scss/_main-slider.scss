@@ -2,6 +2,9 @@
 
 .pc-slider {
     display: none;
+    @include media-breakpoint-up(lg) {
+        display: initial;
+    }
 }
 
 .slide-img { //Background images

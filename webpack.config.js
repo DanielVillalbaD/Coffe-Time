@@ -71,7 +71,7 @@ module.exports = {
             filename: 'detalle.html',
             template: path.join(__dirname, 'src', 'detalle.html'),
             minify: {
-            collapseWhitespace: true
+                collapseWhitespace: true
             }
         }),        
         new webpack.ProvidePlugin({

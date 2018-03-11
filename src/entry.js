@@ -4,6 +4,7 @@ import { GetStaticData } from './js/load-static-data.js';
 import { CommentsService} from './js/CommentsService.js';
 import { CommentFormController } from './js/CommentFormController.js';
 import { CommentsPrintController } from './js/CommentsPrintController.js';
+import './js/scrollUp.js';
 import css from './scss/style.scss';
 import './js/MobileMenuController.js';
 import { PubSub } from 'pubsub-js';
@@ -12,6 +13,10 @@ import { PubSub } from 'pubsub-js';
 document.addEventListener("DOMContentLoaded", () => {
     if (window.location.pathname == '/') {
         let dataController = new GetStaticData();
+        let commentsService = new CommentsService('http://localhost:3001/comments/');
+        let commentsPrintController = new CommentsPrintController('.list-comments', commentsService, PubSub);
+        commentsPrintController.loadComments();
+
     } else if (window.location.pathname == '/detalle.html') {
         let commentsService = new CommentsService('http://localhost:3001/comments/');
 

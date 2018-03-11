@@ -2,6 +2,10 @@
 
 .logo-row {
   margin: 2.2rem 0 1rem 0;
+  @include media-breakpoint-up(lg) {
+    margin: 2.4rem auto;
+    display: block;
+  }
 
   .logo {
   font-family: 'Audiowide', sans-serif;
@@ -28,9 +32,14 @@ header.container-fluid {
   width: 100%; //18rem;
   height: 2rem;
   border: none;
-  border-bottom-right-radius: 5%;
-  border-bottom-left-radius: 5%;
   margin: 0 auto;
+
+  @include media-breakpoint-up(lg) {
+    width: 320px;
+    border-bottom-right-radius: 35%;
+    border-bottom-left-radius: 35%;
+    margin: 0 0 0 10%;
+  }
   
   .topbar-item {
     display: inline-block;
@@ -60,6 +69,10 @@ header.container-fluid {
   border-top: 2px dashed $accent-color;
   border-bottom: 4px solid $accent-color;
   box-shadow: 0px 3px 7px rgba(0,0,0,.5);
+  @include media-breakpoint-up(lg) {
+    display: initial !important;
+  }
+  
 
   .col-nav {
     margin: 0.9rem;
@@ -72,6 +85,9 @@ header.container-fluid {
   .nav-item {
     display: inline-block;
     min-width: 9rem;
+    @include media-breakpoint-up(lg){
+      min-width: 7.8rem;
+    }
     text-align: left;
     a {
       color: $font-color;
@@ -79,6 +95,9 @@ header.container-fluid {
       font-weight: 500;
       font-size: 1rem;
       line-height: .9rem;
+      @include media-breakpoint-up(lg) {
+        font-size: 1.1rem;
+      }
       &:hover, &:focus {
       color: $accent-color;
       }
@@ -87,6 +106,9 @@ header.container-fluid {
         font-family: "Ionicons";
         color: $font-color;
         padding-right: .35rem;
+        @include media-breakpoint-up(lg) {
+          content: "";
+        }
       }
     }
   }  
@@ -100,6 +122,9 @@ header.container-fluid {
   width: 1.8rem;
   height: 1.8rem;
   margin: 1.2rem 1rem 0 0;
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
 
   span {
     margin: 0 auto;

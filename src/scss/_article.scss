@@ -1,3 +1,9 @@
+.article-detail {
+    @include media-breakpoint-up(lg) {
+        border-top: 1px solid $border-color;
+    }
+}
+
 .header-detail {
     width: 96%;
 
@@ -7,13 +13,19 @@
         @include media-breakpoint-up(sm) {
             margin: 1.2rem 0 1.4rem 0;
         }
+        @include media-breakpoint-up(lg) {
+            margin: 1.8rem 0 1.5rem 0;
+        }
     }
 
     .article-img {
-        max-width: 98%;
+        width: 98%;
         margin: 0.5rem 0 1.1rem 0;
         @include media-breakpoint-up(sm) {
             margin: 0.8rem 0 1.6rem 0;
+        }
+        @include media-breakpoint-up(xl) {
+            max-width: 1574px;
         }
     }
 

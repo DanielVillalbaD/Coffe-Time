@@ -1,12 +1,14 @@
 export class CommentsPrintController {
 
     constructor(selector, commentsService, pubSub) {
+
         this.element = document.querySelector(selector);
         this.commentsService = commentsService;
         pubSub.subscribe('comment:created', (event, comment) => {
             console.log("CommentsPrintController", comment);
             this.loadComments();
         });
+
     }
 
     showLoadingMessage() {
@@ -30,17 +32,18 @@ export class CommentsPrintController {
     }
 
     loadComments() {
-        this.showLoadingMessage();
+        (window.location.pathname == '/detalle.html') ? this.showLoadingMessage() : console.log('Comienza carga comentarios');
         this.commentsService.take().then(comments => {
             if (comments.length == 0) {
-                this.showNoCommentsMessage();
+                (window.location.pathname == '/detalle.html') ? this.showNoCommentsMessage() : console.log('No hay mensajes');
             } else {
-                this.renderComments(comments);
+                (window.location.pathname == '/detalle.html') ? this.renderComments(comments) : $('.comments-number').html(comments.length); /* Recuperando comentarios */
             }
         }).catch((error) => {
             console.error("ERROR RETRIEVING COMMENTS", error);
-            this.showErrorMessage();
+            (window.location.pathname == '/detalle.html') ? this.showErrorMessage() : console.error('Hay un error');
         });
+        
 
     }
 

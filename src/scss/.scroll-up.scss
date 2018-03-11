@@ -1,0 +1,33 @@
+.go-up {
+    min-height: 60px;
+    position: relative;
+}
+
+.scroll-up {
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 18px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    line-height: 1.8;
+    border-radius: 50%;
+    border: 1px solid #CCD1D9;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    box-shadow: 1px 1px 0 0 rgba(0,0,0,0.1);
+}
+
+.up {
+    color: #434A54;
+    text-decoration: none;
+    display: block;
+    margin-right: 5px;
+    text-align: center;
+    width: 120px;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 11px;
+}
