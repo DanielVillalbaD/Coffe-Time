@@ -47,7 +47,7 @@ const staticData = [
         "header-img-xs": "/assets/img/lifestyle-xs.jpg",
         "header-img-thumb": "/assets/img/lifestyle-thumb.jpg",
         "content": "Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro. Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca.<quote>Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte de ellas.</quote>Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca. Así que, no debes congojarte por las desgracias que a mí me suceden, pues a ti no te cabe parte dellas. Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro. Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo",
-        "tags": "Actualidad",
+        "tags": ["Actualidad"],
         "date": "2018-2-30 15:25:0"
     },
     {
@@ -128,6 +128,7 @@ export class GetStaticData {
             } else {
                 tagsHtml = '<a href="#">' + tags + '</a>';
             }
+            console.log(tagsHtml);
 
             // Title Meta
             if (title) {
